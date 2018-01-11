@@ -10,6 +10,7 @@
 		940F8ACE2006D8210054A9B1 /* Sugar_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940F8AC42006D8210054A9B1 /* Sugar_Data.framework */; };
 		940F8AD32006D8210054A9B1 /* Sugar_DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F8AD22006D8210054A9B1 /* Sugar_DataTests.swift */; };
 		940F8AD52006D8210054A9B1 /* Sugar_Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 940F8AC72006D8210054A9B1 /* Sugar_Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		940F8ADF2006D8E00054A9B1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F8ADE2006D8E00054A9B1 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		940F8ACD2006D8210054A9B1 /* Sugar.DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sugar.DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		940F8AD22006D8210054A9B1 /* Sugar_DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sugar_DataTests.swift; sourceTree = "<group>"; };
 		940F8AD42006D8210054A9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940F8ADE2006D8E00054A9B1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				940F8AC72006D8210054A9B1 /* Sugar_Data.h */,
 				940F8AC82006D8210054A9B1 /* Info.plist */,
+				940F8ADE2006D8E00054A9B1 /* Request.swift */,
 			);
 			path = Sugar.Data;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					940F8AC32006D8210054A9B1 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					940F8ACC2006D8210054A9B1 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940F8ADF2006D8E00054A9B1 /* Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		940F8AD92006D8210054A9B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.Sugar-Data";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		940F8ADA2006D8210054A9B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		940F8ADC2006D8210054A9B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sugar.DataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		940F8ADD2006D8210054A9B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sugar.DataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
