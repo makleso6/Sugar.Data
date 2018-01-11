@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   Super Duper Data for CoreData framework
+                   Sugar.Data for CoreData framework
                    native swift POP
                    DESC
 
